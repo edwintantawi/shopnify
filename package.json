@@ -8,7 +8,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write **/*.{js,jsx,ts,tsx,json,md}"
   },
   "author": "edwintantawi",
   "license": "MIT",
@@ -37,7 +38,10 @@
     "@types/react-dom": "^18.2.6",
     "eslint": "^8.43.0",
     "eslint-config-next": "^13.4.7",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
     "husky": "^8.0.0",
+    "prettier": "^2.8.8",
     "typescript": "^5.1.3"
   }
 }
