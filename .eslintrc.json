@@ -1,5 +1,10 @@
 {
-  "extends": ["next/core-web-vitals", "eslint:recommended"],
+  "env": { "es6": true },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": ["next/core-web-vitals", "eslint:recommended", "prettier"],
+  "plugins": ["simple-import-sort"],
   "rules": {
     "semi": ["error", "always"],
     "quotes": ["error", "single"],
@@ -16,7 +21,6 @@
         "ignoreReadBeforeAssign": false
       }
     ],
-    "import/newline-after-import": ["error", { "count": 1 }],
     "react/jsx-boolean-value": ["error", "never"],
     "react/self-closing-comp": ["error", { "component": true, "html": true }],
     "react/jsx-no-leaked-render": [
@@ -27,6 +31,29 @@
     "react/function-component-definition": [
       "error",
       { "namedComponents": "function-declaration" }
+    ],
+    "import/newline-after-import": ["error", { "count": 1 }],
+    "import/first": "error",
+    "import/no-duplicates": "error",
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          // react & next imports
+          ["^react", "^react-dom", "^next"],
+          // ext library & side effect imports
+          ["^@?\\w", "^\\u0000"],
+          // app & common & others imports
+          ["^~/app", "^~/common", "^~/"],
+          // relative path 1 level imports
+          ["^./"],
+          // {s}css files
+          ["^.+\\.s?css$"],
+          // others
+          ["^"]
+        ]
+      }
     ]
   }
 }
