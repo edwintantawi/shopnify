@@ -4,7 +4,11 @@
   "private": true,
   "description": "An open source web-based marketplace application built with Next.js",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "author": "edwintantawi",
   "license": "MIT",
@@ -20,9 +24,18 @@
     "url": "https://github.com/edwintantawi/shopnify/issues"
   },
   "homepage": "https://github.com/edwintantawi/shopnify#readme",
+  "dependencies": {
+    "next": "^13.4.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
-    "husky": "^8.0.0"
+    "@types/node": "^20.3.1",
+    "@types/react": "18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "husky": "^8.0.0",
+    "typescript": "^5.1.3"
   }
 }
