@@ -1,0 +1,21 @@
+{
+  "name": "shopnify",
+  "version": "0.1.0",
+  "private": true,
+  "description": "An open source web-based marketplace application built with Next.js",
+  "scripts": {},
+  "author": "edwintantawi",
+  "license": "MIT",
+  "keywords": [
+    "shopnify",
+    "marketplace"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwintantawi/shopnify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edwintantawi/shopnify/issues"
+  },
+  "homepage": "https://github.com/edwintantawi/shopnify#readme"
+}
