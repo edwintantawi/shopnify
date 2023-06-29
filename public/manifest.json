@@ -1,0 +1,21 @@
+{
+  "name": "Shopnify",
+  "short_name": "Shopnify",
+  "description": "An open source web-based marketplace application",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#111827",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
